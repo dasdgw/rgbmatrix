@@ -12,5 +12,7 @@ lib = vu.add_library("lib")
 lib.add_source_files("../../vhdl/*.vhd")
 lib.add_source_files("*.vhd")
 
+
+vu.set_sim_option("modelsim.init_file.gui", "wave.do")
 # Run vunit function
 vu.main()

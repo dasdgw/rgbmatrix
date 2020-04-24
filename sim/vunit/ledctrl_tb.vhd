@@ -51,7 +51,7 @@ architecture tb of ledctrl_tb is
   signal lat      : std_logic;
   signal oe       : std_logic;
   signal addr     : std_logic_vector(ADDR_WIDTH-2 downto 0);
-  signal data     : std_logic_vector(DATA_WIDTH-1 downto 0);
+  signal data     : std_logic_vector(DATA_WIDTH-1 downto 0) := (others => '0');
 
   -- clock
   signal Clk : std_logic := '1';
